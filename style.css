@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: white;
+    transition: all 0.5s ease-out;
+}
+
+
+.top, .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+
+.text, input, select{
+    width: 80%;
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.top>.text{
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    font-weight: 500;
+}
+
+.bottom>button{
+    margin: 10px;
+}
+
+.text>p{
+    margin: 10px auto;
+    width: 50%;
+
+}
+
+.btnClear{
+    background-color: red;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 80%;
+}
+
+.btnSave{
+    background-color: green;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 80%;
+}
+
+.btnRetrieve{
+    background-color: goldenrod;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 80%;
+}
+
+.canvas{
+    background-color: beige;
+    transition: all 0.5s ease-out;
+}
+
+.night{
+    position: absolute;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #14213d;
+    color: white;
+    top: 30px;
+    right: 30px;
+    
+}
+.day{
+    position: absolute;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #14213d;
+    color: white;
+    top: 30px;
+    right: 30px;
+    
+}
+.btnVisiblity{
+    visibility: hidden;
+}
+.btn:hover{
+    background-image:     linear-gradient(
+       to right, 
+       #E7484F,
+       #E7484F 16.65%,
+       #F68B1D 16.65%,
+       #F68B1D 33.3%,
+       #FCED00 33.3%,
+       #FCED00 49.95%,
+       #009E4F 49.95%,
+       #009E4F 66.6%,
+       #00AAC3 66.6%,
+       #00AAC3 83.25%,
+       #732982 83.25%,
+       #732982 100%,
+       #E7484F 100%
+      
+      
+      
+     );
+   animation:slidebg 2s linear infinite;
+ }
+
+ @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }

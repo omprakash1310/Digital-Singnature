@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Signature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div class="main">
+        <div class="top" id="top">
+            <div class="text">
+                <p>Text Color Picker</p>
+                <input type="color" id="colorPicker" value="#000000">
+            </div>
+            <div class="text">
+                <p>Background</p>
+                <input type="color" id="backgroundColor" value="#ffffff">
+            </div>
+            <div class="text">
+                <p>Font Size</p>
+                <select id="fontSize">
+                    <option value="1">1px</option>
+                    <option value="2">2px</option>
+                    <option value="4">4px</option>
+                    <option value="6">6px</option>
+                    <option value="8">8px</option>
+                    <option value="10">10px</option>
+                </select>
+            </div>
+        </div>
+
+        <canvas class="canvas" id="myCanvas" height="500" width="800" style="border:1px solid #000000;"></canvas>
+
+        <div class="bottom">
+            <button type="button" class="btnClear btn" id="clearButton">Clear</button>
+            <button type="button" class="btnSave btn" id="saveButton">Save & Download</button>
+            <button type="button" class="btnRetrieve btn" id="retrieveButton">Retrieve Saved Signature</button>
+        </div>
+    </div>
+
+    <div class="nightmode" id="nightmode">
+        <button class="night" id="nightbtn"><ion-icon name="moon-outline" size="large"></ion-icon></button>
+        <button class="day btnVisiblity" id="daybtn"><ion-icon name="sunny-outline" size="large"></ion-icon></button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
